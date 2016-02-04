@@ -25,9 +25,9 @@
     .done(function(data) {
       console.log(data.Incidents);
       if (data.Incidents.length > 0) {
-        $('#test').text("Yes, there are currently " + data.Incidents.length + " incident(s) on Metro.");
+        $('#test').text("No, there are currently " + data.Incidents.length + " issue(s) on Metro.");
       } else {
-        $('#test').text("No, there are no incidents on Metro right now.");
+        $('#test').text("Yes, all trains appear to be running on time.");
       }
     })
     .fail(function() {
