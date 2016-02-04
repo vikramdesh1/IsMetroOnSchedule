@@ -1,1 +1,40 @@
-<h3>Hello world!</h3>
+<head>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  
+  <script>
+    
+  $(function() {
+    $.ajax({
+      url: "https://api.wmata.com/Incidents.svc/json/Incidents",
+      beforeSend: function(xhrObj) {
+        xhrObj.setRequestHeader("api_key", "44e1abafef1145eebc44b74164f4125d");
+        //This uses WMATA's demo key
+      },
+      type: "GET"
+    })
+    .done(function(data) {
+      console.log(data.Incidents);
+      if (data.Incidents.length > 0) {
+        $('#test').text("Yes, there are currently " + data.Incidents.length + " incident(s) on Metro.");
+      } else {
+        $('#test').text("No, there are no incidents on Metro right now.");
+      }
+    })
+    .fail(function() {
+      console.log("Something went wrong...")
+      $('#test').text("A problem occured while checking for incidents. Please try again later.");
+    });
+});
+
+    
+  </script>
+  
+</head>
+
+<body>
+
+<h3>Are there incidents on Metro right now?</h3>
+<div id='test'>Checking...</div>
+
+</body>
