@@ -14,7 +14,7 @@
   <script>
     
   $(function() {
-    $("#header").fadeIn();
+    $("#header").fadeIn(5000);
     $.ajax({
       url: "https://api.wmata.com/Incidents.svc/json/Incidents",
       beforeSend: function(xhrObj) {
