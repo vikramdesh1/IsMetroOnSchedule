@@ -40,9 +40,11 @@
 });
 
 function updateStatusText(text) {
-  $('#test').fadeOut();
-      $('#test').text(text);
-      $('#test').fadeIn();
+  $('#test').fadeOut(function(){
+    $('#test').text(text);
+    $('#test').fadeIn();
+  });
+      
 };
 
     
