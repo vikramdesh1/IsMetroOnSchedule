@@ -30,7 +30,7 @@
         updateStatusText(message);
         for(i=0; i<data.Incidents.length; i++) {
         $('#details').html(
-          "<strong>Incident Type : </strong>" + Incidents[i].IncidentType
+          "<strong>Incident Type : </strong>" + data.Incidents[i].IncidentType
           );
         }
         $('#details').slideDown();
