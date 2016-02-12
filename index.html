@@ -28,6 +28,13 @@
       if (data.Incidents.length > 0) {
         var message = "No, there are currently " + data.Incidents.length + " issue(s) on Metro.";
         updateStatusText(message);
+        for(i=0; i<Incidents.length; i++) {
+        $('#details').html(
+          "<strong>Incident Type : </strong>" + Incidents[i].IncidentType
+          );
+        }
+        $('#details').slideDown();
+        
       } else {
         updateStatusText("Yes, all trains appear to be running on time.");
       }
@@ -57,6 +64,10 @@ function updateStatusText(text) {
 <div id="header" class="container-fluid" style="display:none">
   <h3 class="text-center">Is Metro on schedule?</h3>
   <div id='test' class="text-center">Checking...</div>
+</div>
+
+<div id="details" class="container-fluid text-center" style="display:none">
+
 </div>
 </body>
 
