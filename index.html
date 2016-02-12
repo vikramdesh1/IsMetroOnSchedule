@@ -51,9 +51,9 @@
 });
 
 function updateStatusText(text) {
-    $('#test').fadeOut(function(){
-    $('#test').text(text);
-    $('#test').fadeIn(function() {
+    $('#message').fadeOut(function(){
+    $('#message:p').text(text);
+    $('#message').fadeIn(function() {
       showDetails();
     });
   });
@@ -73,7 +73,7 @@ function showDetails() {
 
 <div id="header" class="container-fluid jumbotron" style="display:none">
   <h1 class="text-center">Is Metro on schedule?</h1>
-  <div id='test' class="text-center"><p>Checking...</p></div>
+  <div id='message' class="text-center"><p>Checking...</p></div>
 </div>
 
 <div id="details" class="container-fluid text-center" style="display:none">
