@@ -26,14 +26,17 @@
     .done(function(data) {
       console.log(data.Incidents);
       if (data.Incidents.length > 0) {
-        var message = "No, there are currently " + data.Incidents.length + " issue(s) on Metro.";
-        updateStatusText(message);
+        
         for(i=0; i<data.Incidents.length; i++) {
         $('#details').html(
           "<strong>Incident Type : </strong>" + data.Incidents[i].IncidentType
           );
         }
-        $('#details').slideDown();
+        var message = "No, there are currently " + data.Incidents.length + " issue(s) on Metro.";
+        updateStatusText(message, function(){
+          $('#details').slideDown();
+        });
+        
         
       } else {
         updateStatusText("Yes, all trains appear to be running on time.");
