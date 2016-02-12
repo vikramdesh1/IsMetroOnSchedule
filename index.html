@@ -28,8 +28,11 @@
       if (data.Incidents.length > 0) {
         
         for(i=0; i<data.Incidents.length; i++) {
-        var detail = "<div id=\"detail" + i +"\"" + ">"
-        + "<strong>Incident Type : </strong>" + data.Incidents[i].IncidentType
+        var incident = data.Incidents[i];
+        var detail = "<br/> <div id=\"detail" + i +"\"" + ">"
+        + "<strong>Incident Type : </strong>" + incident.IncidentTypr
+        + "<strong>Lines Affected : </strong>" + incident.LinesAffected
+        + "<strong>Description : </strong>" + incident.Description
         + "</div>";
         $('#details').append(detail);
         }
