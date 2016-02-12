@@ -28,7 +28,7 @@
       if (data.Incidents.length > 0) {
         var message = "No, there are currently " + data.Incidents.length + " issue(s) on Metro.";
         updateStatusText(message);
-        for(i=0; i<Incidents.length; i++) {
+        for(i=0; i<data.Incidents.length; i++) {
         $('#details').html(
           "<strong>Incident Type : </strong>" + Incidents[i].IncidentType
           );
