@@ -28,11 +28,11 @@
         
         for(i=0; i<data.Incidents.length; i++) {
         var incident = data.Incidents[i];
-        var detail = "<br/> <div id=\"detail" + i +"\"" + ">"
+        var detail = "<br/><div class=\"col-xs-2\"> <div id=\"detail" + i +"\"" + " class=\"col-xs-8 text-left\">"
         + "<br/><strong>Incident Type : </strong>" + incident.IncidentType
         + "<br/><strong>Lines Affected : </strong>" + incident.LinesAffected
         + "<br/><strong>Description : </strong>" + incident.Description
-        + "</div>";
+        + "</div> <div class=\"col-xs-2\">";
         $('#details').append(detail);
         }
         var message = "No, there are currently " + data.Incidents.length + " issue(s) on Metro.";
