@@ -5,3 +5,7 @@
 #details {
   display: none;
 }
+
+.detail {
+  border: 1px;
+}
