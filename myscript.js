@@ -13,7 +13,7 @@
         
         for(i=0; i<data.Incidents.length; i++) {
         var incident = data.Incidents[i];
-        var detail = "<br/> <div class=\"row\"> <div class=\"col-xs-3\"> </div> <div class=\"detail\"" + " class=\"col-xs-6 text-left\">"
+        var detail = "<br/> <div class=\"row\"> <div class=\"col-xs-3\"> </div> <div class=\"col-xs-6 text-left detail\">"
         + "<br/><strong>Incident Type : </strong>" + incident.IncidentType
         + "<br/><strong>Lines Affected : </strong>" + incident.LinesAffected
         + "<br/><strong>Description : </strong>" + incident.Description
