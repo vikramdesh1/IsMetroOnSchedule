@@ -17,7 +17,7 @@
         + "<strong>Incident Type : </strong>" + incident.IncidentType
         + "<br/><strong>Lines Affected : </strong>" + incident.LinesAffected
         + "<br/><strong>Description : </strong>" + incident.Description
-        + "</div> <div class=\"col-xs-3\"> </div> </div> <br/>";
+        + "</div> <div class=\"col-xs-3\"> </div> </div>";
         $('#details').append(detail);
         }
         var message = "No, there are currently " + data.Incidents.length + " issue(s) on Metro.";
