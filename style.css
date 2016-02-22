@@ -16,4 +16,6 @@
   color: white;
   background-image: url("train.jpg");
   opacity: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
