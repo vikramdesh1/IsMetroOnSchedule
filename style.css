@@ -14,7 +14,7 @@
 }
 
 .jumbotron {
-  color: white;
+  color: red;
   background-image: url("train.png");
   background-repeat: no-repeat;
   background-size: cover;
