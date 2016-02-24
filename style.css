@@ -14,8 +14,8 @@
 }
 
 .jumbotron {
-  color: red;
-  background-image: url("train.png");
+  color: blue;
+  background-image: url("station.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
