@@ -26,11 +26,15 @@
         
       } else {
         updateStatusText("Yes, all trains appear to be running on time.");
+        var image = "<img src=\"checkmark.png\">";
+        $('#details').append(image);
       }
       })
     .fail(function() {
       console.log("Something went wrong...");
       updateStatusText("A problem occured while checking for incidents. Please try again later.");
+      var image = "<img src=\"error.png\" width=\"200px\" height=\"200px\">";
+        $('#details').append(image);
       });
     });
 });
