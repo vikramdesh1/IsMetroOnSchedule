@@ -26,7 +26,7 @@
         
       } else {
         updateStatusText("Yes, all trains appear to be running on time.");
-        var image = "<img src=\"checkmark.png\">";
+        var image = "<img src=\"checkmark.png\" width=\"200px\" height=\"200px\">";
         $('#details').append(image);
       }
       })
