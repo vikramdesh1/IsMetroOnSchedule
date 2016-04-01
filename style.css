@@ -36,3 +36,7 @@ body {
   height: 50px;
   background-color: #f5f5f5;
 }
+
+.footer p{
+	margin: 15px 0;
+}
