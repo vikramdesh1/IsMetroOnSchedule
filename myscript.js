@@ -3,7 +3,7 @@
       $.ajax({
       url: "https://api.wmata.com/incidents.svc/json/incidents",
       beforeSend: function(xhrObj) {
-        xhrObj.setRequestHeader("api_key", "");
+        xhrObj.setRequestHeader("api_key", "e1eee2b5677f408da40af8480a5fd5a8"); //WMATA demo key
       },
       type: "GET"
       })
